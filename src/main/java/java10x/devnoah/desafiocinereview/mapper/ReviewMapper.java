@@ -14,6 +14,7 @@ public class ReviewMapper {
                 .autor(dto.autor())
                 .texto(dto.texto())
                 .nota(dto.nota())
+                .movieTitle(dto.movieTitle())
                 .build();
     }
 
@@ -24,6 +25,8 @@ public class ReviewMapper {
                 .autor(entity.getAutor())
                 .texto(entity.getTexto())
                 .nota(entity.getNota())
+                .movieId(entity.getMovieId())
+                .movieTitle(entity.getMovieTitle())
                 .createdAt(entity.getCreatedAt())
                 .updatedAt(entity.getUpdatedAt())
                 .build();

@@ -27,6 +27,8 @@ public class ReviewController {
                         .autor(saved.getAutor())
                         .texto(saved.getTexto())
                         .nota(saved.getNota())
+                        .movieId(saved.getMovieId())
+                        .movieTitle(saved.getMovieTitle())
                         .createdAt(saved.getCreatedAt())
                         .updatedAt(saved.getUpdatedAt())
                         .build());
@@ -41,6 +43,8 @@ public class ReviewController {
                 .autor(found.getAutor())
                 .texto(found.getTexto())
                 .nota(found.getNota())
+                .movieId(found.getMovieId())
+                .movieTitle(found.getMovieTitle())
                 .createdAt(found.getCreatedAt())
                 .updatedAt(found.getUpdatedAt())
                 .build());
@@ -54,6 +58,8 @@ public class ReviewController {
                 .autor(l.getAutor())
                 .texto(l.getTexto())
                 .nota(l.getNota())
+                .movieId(l.getMovieId())
+                .movieTitle(l.getMovieTitle())
                 .createdAt(l.getCreatedAt())
                 .updatedAt(l.getUpdatedAt())
                 .build()).toList();
@@ -68,6 +74,8 @@ public class ReviewController {
                 .autor(dto.autor())
                 .texto(dto.texto())
                 .nota(dto.nota())
+                .movieId(dto.movieId())
+                .movieTitle(dto.movieTitle())
                 .build();
         var updated = reviewService.atualizar(exist);
         return ResponseEntity.ok(ReviewDTO.builder()
@@ -75,6 +83,8 @@ public class ReviewController {
                 .autor(updated.getAutor())
                 .texto(updated.getTexto())
                 .nota(updated.getNota())
+                .movieId(updated.getMovieId())
+                .movieTitle(updated.getMovieTitle())
                 .createdAt(updated.getCreatedAt())
                 .updatedAt(updated.getUpdatedAt())
                 .build());

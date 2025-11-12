@@ -22,6 +22,10 @@ public class Review {
     @Lob
     private String texto;
     private double nota;
+    @Column(nullable = false)
+    private Integer movieId;
+    @Column(nullable = false)
+    private String movieTitle;
     @CreationTimestamp
     @Column(nullable = false, updatable = false)
     private Instant createdAt;

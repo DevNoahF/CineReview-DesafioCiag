@@ -33,7 +33,6 @@ public class MovieService {
                 .build()
                 .toUri();
 
-        // Configura headers
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<String> entity = new HttpEntity<>(headers);
