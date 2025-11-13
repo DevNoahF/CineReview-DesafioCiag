@@ -32,5 +32,4 @@ public class Review {
     @UpdateTimestamp
     @Column(nullable = false)
     private Instant updatedAt;
-
 }

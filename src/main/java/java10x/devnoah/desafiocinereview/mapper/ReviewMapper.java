@@ -14,7 +14,7 @@ public class ReviewMapper {
                 .autor(dto.autor())
                 .texto(dto.texto())
                 .nota(dto.nota())
-                .movieTitle(dto.movieTitle())
+                .movieId(dto.movieId())
                 .build();
     }
 
